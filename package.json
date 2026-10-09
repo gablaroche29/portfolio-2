@@ -16,6 +16,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@iconify-icons/mdi": "^2.0.0",
+    "@iconify/vue": "^5.0.3",
     "@paper-design/shaders": "0.0.81",
     "@tailwindcss/vite": "^4.1.17",
     "pinia": "^3.0.4",
