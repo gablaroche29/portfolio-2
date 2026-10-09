@@ -82,33 +82,6 @@ export const projects: Project[] = [
     },
   },
   {
-    title: 'Enemy AI Experiment',
-    description: 'State machines and combat behaviors for action games.',
-    subtitle: 'Exploring Finite State Machines (FSM) to create challenging NPC encounters.',
-    type: 'Game Systems',
-    overview:
-      'A sandbox environment used to test various AI patterns including patrolling, line-of-sight detection, and coordinated group attacks.',
-    features: [
-      'Plug-and-play FSM architecture',
-      'Sensory systems (Vision & Hearing)',
-      'Dynamic behavior trees',
-    ],
-    technical: {
-      engine: 'Unity',
-      genre: 'Sandbox / AI',
-      focus: 'System Architecture',
-      status: 'Experimental',
-    },
-    outcome:
-      'Developed a reusable AI framework that reduced NPC setup time by 40% in subsequent projects.',
-    temporaryImage: {
-      src: '/images/projects/enemy-ai.jpg',
-      alt: 'An abstract flowing black and purple texture',
-      credit: 'Alexander X.',
-      source: 'https://unsplash.com/photos/abstract-flowing-purple-and-black-texture-T8HjnowGfqk',
-    },
-  },
-  {
     title: 'UI System for Indie Games',
     description: 'Reusable UI rules and layouts for game menus.',
     subtitle: 'A standardized design system for game interfaces across different resolutions.',
