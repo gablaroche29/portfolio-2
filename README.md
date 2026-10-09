@@ -1,48 +1,33 @@
-# vuejs-template
+# Gabriel's portfolio — Vue
 
-This template should help get you started developing with Vue 3 in Vite.
+A Vue 3 and TypeScript port of the React/Next.js portfolio in `../portfolio`, built with Vite, Vue Router, and Tailwind CSS v4.
 
-## Recommended IDE Setup
+The original content, fixed 25% sidebar, scrollable content pane, card styles, category filters, and scanline effect are preserved.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Development
 
 ```sh
 bun install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 bun dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## Validation and production build
 
 ```sh
+bun run type-check
+bun run lint
 bun run build
+bun run preview
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Source layout
 
-```sh
-bun lint
-```
+- `src/App.vue`: shared sidebar and content layout, ported from `app/layout.tsx`.
+- `src/views/`: Projects (`/`), Skills (`/skills`), Events (`/events`), and the catch-all 404 page.
+- `src/components/`: Vue equivalents of the original React components.
+- `src/data/`: original project, skill, and event content.
+- `src/assets/main.css` and `public/`: original theme and static assets.
+
+`Hero.vue` and `HeroVisual.vue` remain available as standalone components, matching the source project's current layout where they are not displayed. The wireframe hero uses Three.js directly in Vue.
+
+Production hosting must serve `index.html` for application routes so direct visits to `/skills` and `/events` work with Vue Router's history mode.
