@@ -1,16 +1,12 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, defineOptions } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 
 defineOptions({ name: 'PortfolioNavigation' })
 
 const route = useRoute()
 const pathname = computed(() => route.path.replace(/\/$/, '') || '/')
-const links = [
-  { href: '/projects', label: 'Projects' },
-  { href: '/skills', label: 'Skills' },
-  { href: '/events', label: 'Events' },
-]
+const links = [{ href: '/projects', label: 'Projects' }]
 </script>
 
 <template>
