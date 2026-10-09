@@ -17,6 +17,12 @@ export type Project = {
     status: string
   }
   outcome: string
+  temporaryImage: {
+    src: string
+    alt: string
+    credit: string
+    source: string
+  }
 }
 
 export const projects: Project[] = [
@@ -33,10 +39,6 @@ export const projects: Project[] = [
       'Enemy AI using state machines',
       'Modular stats and difficulty scaling',
     ],
-    media: {
-      type: 'video',
-      src: '/videos/dungeon-combat.mp4',
-    },
     technical: {
       engine: 'Godot 4',
       genre: 'Action RPG',
@@ -45,6 +47,13 @@ export const projects: Project[] = [
     },
     outcome:
       'This project strengthened my understanding of combat feedback loops and reinforced the importance of clarity in enemy behavior.',
+    temporaryImage: {
+      src: '/images/projects/dungeon.jpg',
+      alt: 'A building washed in purple light at night',
+      credit: 'the blowup',
+      source:
+        'https://unsplash.com/photos/purple-and-brown-building-with-lights-turned-on-during-night-time-1mdNAaReCRE',
+    },
   },
   {
     title: 'Minimal Portfolio Platform',
@@ -58,10 +67,6 @@ export const projects: Project[] = [
       'Custom CSS variable-based theming',
       'Optimized Core Web Vitals',
     ],
-    media: {
-      type: 'image',
-      src: '/images/portfolio-preview.webp',
-    },
     technical: {
       framework: 'Next.js / Tailwind',
       focus: 'Front-end Performance',
@@ -69,6 +74,12 @@ export const projects: Project[] = [
     },
     outcome:
       'Achieved a 100/100 Lighthouse score while maintaining a unique, high-contrast aesthetic.',
+    temporaryImage: {
+      src: '/images/projects/portfolio.jpg',
+      alt: 'Computer hardware lit by a purple screen',
+      credit: 'Samsung Memory',
+      source: 'https://unsplash.com/photos/a-computer-with-a-purple-screen-kdSo_WwGN-0',
+    },
   },
   {
     title: 'Enemy AI Experiment',
@@ -90,6 +101,12 @@ export const projects: Project[] = [
     },
     outcome:
       'Developed a reusable AI framework that reduced NPC setup time by 40% in subsequent projects.',
+    temporaryImage: {
+      src: '/images/projects/enemy-ai.jpg',
+      alt: 'An abstract flowing black and purple texture',
+      credit: 'Alexander X.',
+      source: 'https://unsplash.com/photos/abstract-flowing-purple-and-black-texture-T8HjnowGfqk',
+    },
   },
   {
     title: 'UI System for Indie Games',
@@ -110,5 +127,12 @@ export const projects: Project[] = [
     },
     outcome:
       'Successfully created a workflow that bridges the gap between high-fidelity design and in-engine implementation.',
+    temporaryImage: {
+      src: '/images/projects/ui-system.jpg',
+      alt: 'A close view of text on a purple computer screen',
+      credit: 'Jonathan Kemper',
+      source:
+        'https://unsplash.com/photos/a-close-up-of-a-computer-screen-with-a-purple-background-N8AYH8R2rWQ',
+    },
   },
 ]

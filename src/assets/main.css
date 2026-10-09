@@ -12,6 +12,10 @@
   --color-aside-border: #75539a;
   --color-aside-accent: #ab79f7;
   --color-home-shader: #8f5bd8;
+  --color-project-background: #08070a;
+  --color-project-foreground: #c8a7ff;
+  --color-project-highlight: #e0cdff;
+  --color-project-tone: #7541b8;
 }
 
 .portfolio-aside-grain {

@@ -20,7 +20,7 @@ watch(
     <main
       ref="contentPane"
       class="@container col-span-3 min-h-0 min-w-0 overflow-x-hidden overflow-y-auto overscroll-contain"
-      :class="route.name === 'home' ? 'p-0' : 'p-3 md:p-6 lg:p-8'"
+      :class="['home', 'projects'].includes(String(route.name)) ? 'p-0' : 'p-3 md:p-6 lg:p-8'"
       aria-label="Portfolio content"
     >
       <RouterView />
