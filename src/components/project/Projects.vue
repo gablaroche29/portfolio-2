@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
 import { projects } from '@/data/projects'
+import { computed, defineOptions, onMounted, ref } from 'vue'
 
 defineOptions({ name: 'PortfolioProjects' })
 
@@ -54,20 +54,6 @@ onMounted(() => {
       <div class="project-vignette absolute inset-0" />
       <div class="project-grain absolute inset-0 opacity-35" />
     </figure>
-
-    <header
-      class="border-project-foreground/35 relative z-10 flex items-start justify-between border-b px-4 py-4 font-mono text-[0.62rem] tracking-[0.22em] uppercase sm:px-6 lg:px-10"
-    >
-      <div>
-        <p class="text-project-foreground/65">Index / Selected work</p>
-        <h2 id="projects-title" class="text-project-highlight mt-1 text-xs font-medium sm:text-sm">
-          Projects
-        </h2>
-      </div>
-      <p class="text-project-foreground/65 text-right">
-        {{ String(projects.length).padStart(2, '0') }} entries<br />2026
-      </p>
-    </header>
 
     <div class="relative z-10 my-auto w-full px-4 py-14 sm:px-6 lg:px-10">
       <div
@@ -133,26 +119,6 @@ onMounted(() => {
         </li>
       </ol>
     </div>
-
-    <footer
-      class="border-project-foreground/35 relative z-10 flex flex-col items-start justify-between gap-3 border-t px-4 py-4 font-mono text-[0.58rem] tracking-[0.12em] uppercase sm:flex-row sm:items-end sm:gap-6 sm:px-6 lg:px-10"
-    >
-      <p class="text-project-highlight/75 max-w-xl leading-relaxed">
-        {{
-          visibleProject?.description ??
-          'Move across the index to preview the atmosphere of each project.'
-        }}
-      </p>
-      <a
-        v-if="visibleProject"
-        :href="visibleProject.temporaryImage.source"
-        target="_blank"
-        rel="noreferrer"
-        class="text-project-foreground/60 decoration-project-foreground/35 hover:text-project-highlight focus-visible:outline-project-highlight shrink-0 text-right underline underline-offset-4 transition-colors focus-visible:outline-2 focus-visible:outline-offset-4"
-      >
-        Temporary image<br />{{ visibleProject.temporaryImage.credit }}
-      </a>
-    </footer>
   </section>
 </template>
 
