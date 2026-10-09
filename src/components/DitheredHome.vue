@@ -33,11 +33,11 @@ onMounted(() => {
       {
         u_colorBack: getShaderColorFromString(getThemeColor('--color-aside-background')),
         u_colorFront: getShaderColorFromString(getThemeColor('--color-home-shader')),
-        u_shape: DitheringShapes.sphere,
+        u_shape: DitheringShapes.simplex,
         u_type: DitheringTypes['4x4'],
         u_pxSize: 3,
         u_fit: ShaderFitOptions.cover,
-        u_scale: 0.72,
+        u_scale: 0.8,
         u_rotation: 0,
         u_originX: 0.5,
         u_originY: 0.5,

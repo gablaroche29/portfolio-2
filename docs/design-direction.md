@@ -18,6 +18,7 @@ It should express Gabriel's taste and personality through composition, imagery, 
 - The existing small glitch effects and skill cards are elements Gabriel likes.
 - A full 3D website is out of scope. Depth is acceptable when it helps animation or another interaction, but it should not be the focus.
 - Simple shapes remain possible, but they need a reason to belong in the composition.
+- The home treatment should use the existing square Paper Shader dithering across the full section, with broad organic black and purple masses produced by a simplex-noise field rather than an isolated shape.
 - The page structure is approved for implementation. Visual changes remain at the art direction stage.
 
 ## Confirmed page structure
@@ -181,3 +182,4 @@ The current Next.js foundation is available for a later build. This brief does n
 - **2026-10-08 — revised proposal:** photographic editorial direction; compare a composed work index with an interrupted editorial sequence; record unresolved choices before implementation.
 - **2026-10-09 — Gabriel's structure request:** implement a single-screen portfolio with a 25% left aside for purpose and Projects / Skills / Events navigation, and a 75% right content area. Preserve existing card styling and limit implementation to structure.
 - **2026-10-09 — Gabriel's simplification:** use the native app layout and route pages, allow content-pane scrolling, remove viewport hooks and pagination, prefer Tailwind CSS v4, and list projects without opening detail windows.
+- **2026-10-09 — home texture direction:** use a full-section simplex-noise field rendered with the existing square 4×4 Paper Shader dithering, creating large irregular black and purple masses with varied dot density.

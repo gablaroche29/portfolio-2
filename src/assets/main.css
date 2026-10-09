@@ -30,8 +30,8 @@
 .home-shader-fallback {
   background: radial-gradient(
     circle at center,
-    var(--color-home-shader) 0 22%,
-    var(--color-aside-background) 23%
+    var(--color-home-shader),
+    var(--color-aside-background) 100%
   );
 }
 
