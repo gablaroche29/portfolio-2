@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Projects from '@/components/project/Projects.vue'
+import DitheredHome from '@/components/DitheredHome.vue'
 </script>
 
 <template>
-  <Projects />
+  <DitheredHome />
 </template>

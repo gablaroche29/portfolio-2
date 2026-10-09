@@ -6,6 +6,47 @@
   --color-muted: #6b6b6b;
   --color-border: #e5e5e5;
   --color-subtle: #f7f7f7;
+  --color-aside-background: #08070a;
+  --color-aside-foreground: #ab79f7;
+  --color-aside-muted: #9f78cc;
+  --color-aside-border: #75539a;
+  --color-aside-accent: #ab79f7;
+  --color-home-shader: #8f5bd8;
+}
+
+.portfolio-aside-grain {
+  background-image: radial-gradient(
+    color-mix(in srgb, var(--color-aside-foreground) 24%, transparent) 0.7px,
+    transparent 0.7px
+  );
+  background-size: 5px 5px;
+  mask-image: linear-gradient(to bottom, black, transparent 42%, black);
+}
+
+.home-shader-fallback {
+  background: radial-gradient(
+    circle at center,
+    var(--color-home-shader) 0 22%,
+    var(--color-aside-background) 23%
+  );
+}
+
+.home-shader-vignette {
+  background: linear-gradient(
+    115deg,
+    color-mix(in srgb, var(--color-aside-background) 62%, transparent) 0%,
+    transparent 30%,
+    transparent 70%,
+    color-mix(in srgb, var(--color-aside-background) 48%, transparent) 100%
+  );
+}
+
+.home-shader-scanlines {
+  background-image: linear-gradient(
+    color-mix(in srgb, var(--color-home-shader) 12%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 100% 4px;
 }
 
 body::before {

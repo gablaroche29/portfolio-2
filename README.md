@@ -2,7 +2,7 @@
 
 A Vue 3 and TypeScript port of the React/Next.js portfolio in `../portfolio`, built with Vite, Vue Router, and Tailwind CSS v4.
 
-The original content, fixed 25% sidebar, scrollable content pane, card styles, category filters, and scanline effect are preserved.
+The portfolio uses a fixed 25% sidebar, a shader home scene, and a scrollable content pane for the project, skill, and event routes.
 
 ## Development
 
@@ -22,8 +22,8 @@ bun run preview
 
 ## Source layout
 
-- `src/App.vue`: shared sidebar and content layout, ported from `app/layout.tsx`.
-- `src/views/`: Projects (`/`), Skills (`/skills`), Events (`/events`), and the catch-all 404 page.
+- `src/App.vue`: shared sidebar and content layout.
+- `src/views/`: Home (`/`), Projects (`/projects`), Skills (`/skills`), Events (`/events`), and the catch-all 404 page.
 - `src/components/`: Vue equivalents of the original React components.
 - `src/data/`: original project, skill, and event content.
 - `src/assets/main.css` and `public/`: original theme and static assets.
